@@ -3,85 +3,125 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>First Page Digital — Meta B2B Lead Gen: Proof, Blueprint, Week 1 Read</title>
+<title>First Page Digital — 4 Hooks To Test Against Your Guarantee Ad</title>
 <style>
   :root{
-    --ink:#1b1f23; --muted:#5c6570; --line:#e7e9ec; --bg:#f7f8f9; --card:#fff;
-    --accent:#2451b8; --accent-dark:#173a8a; --green:#1c7a4d; --red:#b6402f;
+    --ink:#1a1a1a; --muted:#6b6b6b; --line:#e5e3df; --bg:#fbfaf8; --card:#fff;
+    --accent:#8a4fff; --accent-dark:#5f2fd6; --fb:#1877f2;
   }
   *{box-sizing:border-box;}
   body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);}
-  .wrap{max-width:880px;margin:0 auto;padding:0 0 60px;}
-  header{background:linear-gradient(135deg,var(--accent-dark),var(--accent));color:#fff;padding:32px 36px 28px;}
-  header .badge{display:inline-block;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.35);border-radius:20px;padding:4px 12px;font-size:11.5px;letter-spacing:.03em;margin-bottom:12px;}
-  header h1{margin:0 0 8px;font-size:21px;font-weight:700;line-height:1.3;}
-  header p{margin:0;color:#dbe4fa;font-size:13.5px;max-width:680px;line-height:1.55;}
-  section{padding:28px 36px 6px;}
-  h2{font-size:15px;font-weight:700;margin:0 0 4px;}
-  .tag{display:inline-block;font-size:10.5px;font-weight:700;letter-spacing:.03em;color:#fff;background:var(--accent);border-radius:4px;padding:2px 7px;margin-right:8px;vertical-align:middle;}
-  .tag.green{background:var(--green);}
-  .tag.red{background:var(--red);}
-  p.body{font-size:13.5px;line-height:1.65;color:#33393f;margin:8px 0 16px;}
-  .stat-row{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:14px 0 22px;}
-  .stat{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px;}
+  .wrap{max-width:860px;margin:0 auto;padding:0 0 60px;}
+  header{padding:34px 36px 26px;border-bottom:2px solid var(--ink);}
+  header .eyebrow{font-size:11px;font-weight:700;letter-spacing:.08em;color:var(--accent-dark);text-transform:uppercase;margin-bottom:10px;}
+  header h1{margin:0 0 10px;font-size:23px;font-weight:800;line-height:1.28;}
+  header p{margin:0;color:var(--muted);font-size:13.5px;max-width:660px;line-height:1.6;}
+  section{padding:30px 36px 4px;}
+  h2{font-size:14px;font-weight:800;margin:0 0 4px;text-transform:uppercase;letter-spacing:.02em;}
+  .num{display:inline-flex;align-items:center;justify-content:center;width:20px;height:20px;border-radius:50%;background:var(--ink);color:#fff;font-size:11px;font-weight:800;margin-right:8px;}
+  p.body{font-size:13.5px;line-height:1.65;color:#2a2a2a;margin:8px 0 16px;}
+  .stat-row{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:14px 0 6px;}
+  .stat{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:13px 15px;}
   .stat .l{font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.03em;margin-bottom:4px;}
-  .stat .v{font-size:18px;font-weight:700;}
-  .stat .sub{font-size:11.5px;color:var(--muted);margin-top:2px;}
-  ol.blueprint{margin:6px 0 20px;padding-left:20px;font-size:13.5px;line-height:1.7;color:#33393f;}
-  ol.blueprint li b{color:var(--ink);}
-  .observed{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px 18px;margin-bottom:14px;}
-  .observed .l{font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.03em;margin-bottom:6px;}
-  .observed .creative{font-size:13px;line-height:1.5;color:#33393f;border-left:3px solid var(--line);padding-left:12px;margin-top:8px;}
-  .note{background:#eef3ff;border:1px solid #cddaf7;color:#173a8a;border-radius:8px;padding:12px 16px;font-size:12.5px;line-height:1.55;margin:14px 0 22px;}
-  footer{padding:24px 36px 50px;color:var(--muted);font-size:12px;line-height:1.6;border-top:1px solid var(--line);margin:10px 36px 0;}
+  .stat .v{font-size:18px;font-weight:800;}
+  .stat .sub{font-size:11px;color:var(--muted);margin-top:2px;}
+  .fine{font-size:11.5px;color:var(--muted);margin:10px 0 8px;}
+
+  .swipe-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:14px 0 8px;}
+  .ad-card{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;box-shadow:0 1px 2px rgba(0,0,0,.04);}
+  .ad-head{display:flex;align-items:center;gap:8px;padding:10px 12px 6px;}
+  .ad-avatar{width:26px;height:26px;border-radius:50%;background:var(--fb);color:#fff;font-size:10px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+  .ad-who{line-height:1.2;}
+  .ad-who .name{font-size:11.5px;font-weight:700;}
+  .ad-who .sponsored{font-size:10px;color:var(--muted);}
+  .ad-primary{padding:2px 12px 10px;font-size:12px;line-height:1.5;color:#2a2a2a;}
+  .ad-img{height:70px;background:repeating-linear-gradient(135deg,#f1eefc,#f1eefc 8px,#e9e4fb 8px,#e9e4fb 16px);display:flex;align-items:center;justify-content:center;color:#9a86e0;font-size:10px;letter-spacing:.05em;text-transform:uppercase;font-weight:700;}
+  .ad-bottom{padding:9px 12px;display:flex;align-items:center;justify-content:space-between;background:#f7f6f4;}
+  .ad-headline{font-size:12.5px;font-weight:800;line-height:1.3;max-width:70%;}
+  .ad-cta{font-size:10.5px;font-weight:700;background:#e9e9e9;border-radius:5px;padding:5px 9px;color:#2a2a2a;white-space:nowrap;}
+  .tagchip{display:inline-block;font-size:9.5px;font-weight:800;letter-spacing:.03em;text-transform:uppercase;color:var(--accent-dark);background:#f1eefc;border-radius:4px;padding:2px 7px;margin:8px 12px 0;}
+
+  .flow{display:flex;align-items:stretch;gap:0;margin:16px 0 8px;overflow-x:auto;}
+  .flow-box{flex:1;min-width:150px;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px;}
+  .flow-box .l{font-size:9.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.03em;margin-bottom:4px;}
+  .flow-box .t{font-size:12.5px;font-weight:700;line-height:1.35;}
+  .flow-arrow{display:flex;align-items:center;justify-content:center;width:26px;color:var(--muted);font-size:16px;flex-shrink:0;}
+
+  .note{background:#f7f6f4;border:1px solid var(--line);border-radius:8px;padding:12px 16px;font-size:12px;line-height:1.55;margin:16px 0 6px;color:#3a3a3a;}
+  footer{padding:24px 36px 50px;color:var(--muted);font-size:12px;line-height:1.6;border-top:1px solid var(--line);margin:14px 36px 0;}
   footer b{color:var(--ink);}
-  @media (max-width:780px){.stat-row{grid-template-columns:1fr;}}
+  @media (max-width:700px){.stat-row,.swipe-grid{grid-template-columns:1fr;}.flow{flex-direction:column;}.flow-arrow{transform:rotate(90deg);padding:2px 0;}}
 </style>
 </head>
 <body>
 <div class="wrap">
 
 <header>
-  <div class="badge">PREPARED FOR: META ADS SPECIALIST — B2B LEAD GEN</div>
-  <h1>Proof, Blueprint, and a Week 1 Read on First Page Digital's Own Meta Presence</h1>
-  <p>Answering the three things the job post actually asked for, in order: one campaign I'm proud of with real numbers, my blueprint for scaling B2B lead gen on Meta, and an unprompted look at how First Page Digital is currently running its own Meta ads.</p>
+  <div class="eyebrow">Built from your live Meta account, not a template</div>
+  <h1>4 Hooks To Test Against Your Guarantee Ad</h1>
+  <p>Your Ad Library shows one performance-guarantee ad running with zero hook variation, and a separate podcast/playbook campaign with no bridge into it. Below: proof this approach works at scale, four alternate hooks ready to test, and the audience bridge to connect the two campaigns.</p>
 </header>
 
 <section>
-  <span class="tag">01</span><h2 style="display:inline">One campaign I'm proud of</h2>
-  <p class="body"><b>REsimpli</b> — a B2B SaaS platform for real estate investors. Ran the full Meta funnel for this account for three years (Mar 2022–Apr 2025) across 8 campaigns, cold traffic through to retargeting, without efficiency collapsing as spend continued. This is the exact "validate → scale without torching the budget" pattern the role is asking for, not a single good week.</p>
+  <h2><span class="num">1</span>Proof this scales, not just a good week</h2>
+  <p class="body"><b>REsimpli</b>, a B2B SaaS platform for real estate investors. Full Meta funnel, three years straight (Mar 2022 to Apr 2025), 8 campaigns, cold traffic through retargeting, without efficiency collapsing as spend kept increasing.</p>
   <div class="stat-row">
-    <div class="stat"><div class="l">TOF — Leads Quiz</div><div class="v">$65.82</div><div class="sub">per completed registration</div></div>
-    <div class="stat"><div class="l">TOF — Sales</div><div class="v">$58.39</div><div class="sub">per completed registration</div></div>
-    <div class="stat"><div class="l">Retargeting — Sales</div><div class="v">$87.71</div><div class="sub">per completed registration (smaller, higher-intent pool)</div></div>
+    <div class="stat"><div class="l">Cold — Quiz</div><div class="v">$65.82</div><div class="sub">per completed registration</div></div>
+    <div class="stat"><div class="l">Cold — Sales</div><div class="v">$58.39</div><div class="sub">per completed registration</div></div>
+    <div class="stat"><div class="l">Retargeting — Sales</div><div class="v">$87.71</div><div class="sub">smaller, higher-intent pool</div></div>
   </div>
-  <p class="body">The retargeting layer stayed fed by an always-on "A/B Lookalike + Matched + Retargeting" campaign running landing-page-view traffic at <b>$0.18/view</b> (5,161 views) so the bottom of the funnel never starved. That's the part most accounts miss: the top-of-funnel and retargeting campaigns were built and measured as one connected system, not two separate line items.</p>
+  <p class="fine">Bottom of funnel stayed fed by an always-on lookalike + retargeting layer at $0.18 per landing page view (5,161 views), so retargeting never starved while cold traffic kept testing.</p>
 </section>
 
 <section>
-  <span class="tag green">02</span><h2 style="display:inline">My blueprint for scaling B2B lead gen on Meta</h2>
-  <ol class="blueprint">
-    <li><b>Validate on a hypothesis, not a vibe.</b> Every test starts with a specific belief about why an angle will work, run at just enough spend to reach a real read, before it earns more budget.</li>
-    <li><b>Prove the hook before you build the funnel around it.</b> A creative concept earns a dedicated landing page and retargeting sequence only after it's proven at small spend, not before.</li>
-    <li><b>Split always-on from tactical.</b> One steady baseline campaign that never turns off, so the pipeline and the data both stay continuous, plus separate tactical campaigns for specific offers or timing.</li>
-    <li><b>The guardrail metric is cost per qualified lead, never CPM or CTR.</b> Scale by adding budget to what's already proven to convert, not by launching more new campaigns to chase volume.</li>
-    <li><b>Kill fast, scale slow.</b> Cut non-performers inside a defined test window. Scale winners in 20 to 30 percent steps so Meta's delivery system doesn't reset into a fresh learning phase.</li>
-  </ol>
+  <h2><span class="num">2</span>Four hooks to test against your guarantee ad</h2>
+  <p class="body">Your current ad, "40% Better Results Or We Work For Free," is a strong offer running with no competing angle, so there's no read yet on whether it's the strongest one available. These four are built specifically against that same offer, each testing a different reason to click.</p>
+  <div class="swipe-grid">
+    <div class="ad-card">
+      <span class="tagchip">Curiosity</span>
+      <div class="ad-head"><div class="ad-avatar">FPD</div><div class="ad-who"><div class="name">First Page Digital</div><div class="sponsored">Sponsored</div></div></div>
+      <div class="ad-primary">Most agencies won't put this in writing. Here's the framework behind our 40% guarantee.</div>
+      <div class="ad-img">IMAGE / VIDEO</div>
+      <div class="ad-bottom"><div class="ad-headline">See The Framework Behind Our 40% Guarantee</div><div class="ad-cta">Learn More</div></div>
+    </div>
+    <div class="ad-card">
+      <span class="tagchip">Objection</span>
+      <div class="ad-head"><div class="ad-avatar">FPD</div><div class="ad-who"><div class="name">First Page Digital</div><div class="sponsored">Sponsored</div></div></div>
+      <div class="ad-primary">Still running B2B ads with no guarantee attached? Here's what changes when there is one.</div>
+      <div class="ad-img">IMAGE / VIDEO</div>
+      <div class="ad-bottom"><div class="ad-headline">Ads With No Guarantee? Here's What Changes</div><div class="ad-cta">Learn More</div></div>
+    </div>
+    <div class="ad-card">
+      <span class="tagchip">Risk reversal</span>
+      <div class="ad-head"><div class="ad-avatar">FPD</div><div class="ad-who"><div class="name">First Page Digital</div><div class="sponsored">Sponsored</div></div></div>
+      <div class="ad-primary">What if your next campaign carried zero downside? That's the actual offer.</div>
+      <div class="ad-img">IMAGE / VIDEO</div>
+      <div class="ad-bottom"><div class="ad-headline">What If Your Next Campaign Was Risk-Free?</div><div class="ad-cta">Learn More</div></div>
+    </div>
+    <div class="ad-card">
+      <span class="tagchip">Direct offer</span>
+      <div class="ad-head"><div class="ad-avatar">FPD</div><div class="ad-who"><div class="name">First Page Digital</div><div class="sponsored">Sponsored</div></div></div>
+      <div class="ad-primary">40% better results, in writing, or you don't pay for the work. Full stop.</div>
+      <div class="ad-img">IMAGE / VIDEO</div>
+      <div class="ad-bottom"><div class="ad-headline">40% Better Results, Or We Work For Free</div><div class="ad-cta">Learn More</div></div>
+    </div>
+  </div>
+  <p class="fine">The fourth keeps your current control as the baseline. All four run together so the winner is decided by data, not a guess.</p>
 </section>
 
 <section>
-  <span class="tag red">03</span><h2 style="display:inline">Unprompted: how First Page Digital is running Meta right now</h2>
-  <p class="body">Pulled directly from Meta's public Ad Library against the "First Page Digital - Singapore" page, not a guess.</p>
-
-  <div class="observed">
-    <div class="l">What's currently live: ~5 active ads, 2 creative concepts</div>
-    <div class="creative"><b>Concept A — top of funnel:</b> a podcast/webinar invite ("Every agency is selling a different AI Search framework... prepare your toughest questions") plus an AI Search Playbook download. Both point to podcast.firstpagedigital.sg.</div>
-    <div class="creative"><b>Concept B — bottom of funnel:</b> a single performance-guarantee ad, "40% Better Results Or We Work For Free," running with the identical headline and body copy across every format variant (static image and video). No second hook is being tested against it.</div>
+  <h2><span class="num">3</span>The bridge your two campaigns are missing</h2>
+  <p class="body">Right now the podcast/playbook audience and the guarantee-offer retargeting campaign don't talk to each other. This is the one addition that connects them before any of the four hooks above start spending.</p>
+  <div class="flow">
+    <div class="flow-box"><div class="l">Step 1</div><div class="t">Podcast + Playbook viewers</div></div>
+    <div class="flow-arrow">&#8594;</div>
+    <div class="flow-box"><div class="l">Step 2</div><div class="t">Custom audience: 25%+ video, landing page visits</div></div>
+    <div class="flow-arrow">&#8594;</div>
+    <div class="flow-box"><div class="l">Step 3</div><div class="t">Retargeting: 4-hook guarantee test</div></div>
+    <div class="flow-arrow">&#8594;</div>
+    <div class="flow-box"><div class="l">Step 4</div><div class="t">Qualified lead</div></div>
   </div>
-
-  <p class="body"><b>What I'd change in week one:</b> right now these read as two disconnected single-creative campaigns rather than one system. There's nothing observable tying the podcast/playbook audience into the guarantee-offer retargeting funnel, and the guarantee ad has zero hook variation running against it, so there's no way to know yet whether "40% Better Results" is actually the strongest angle or just the only one in market. I'd build the bridge between the two (content audience → guarantee retargeting) and get 3 to 4 alternate hooks into rotation against the guarantee offer before touching budget, exactly the validate-before-you-scale approach above.</p>
-
-  <div class="note">This required no account access, just the same due diligence I'd apply to any account before touching it. Happy to go deeper once inside the actual account and creative library.</div>
+  <div class="note">No account access was needed to build any of this, same due diligence I'd apply before touching any account. Happy to go deeper once inside the actual ad account and creative library.</div>
 </section>
 
 <footer>
